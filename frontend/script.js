@@ -28,7 +28,7 @@ form.addEventListener('submit', async (e) => {
     submitBtn.innerHTML = '<span class="loading"></span>Enviando...';
 
     try {
-        const response = await fetch('http://localhost:3000/projects/gestion-de-tickets/issues.json', {
+        const response = await fetch('http://localhost:8080/projects/gestion-de-tickets/issues.json', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
